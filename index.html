@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega-Sena</title>
+  <style>
+    /* Estilo */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1c1c1c;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 80px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      min-height: 350px;
+
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #ffcc00;
+      margin-bottom: 25px;
+
+    }
+
+    .numeros {
+      font-size: 36px;
+      font-weight: bold;
+      color: #28a745;
+      background-color: #2d2d2d;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      margin-bottom: 15px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .tempo {
+      font-size: 18px;
+      color: #bbb;
+      margin-top: 20px;
+
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 18px 35px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      margin-top: 30px;
+
+    }
+
+    button:hover {
+      background-color: #d3d3d3;
+      color: #333;
+      transform: scale(1.1);
+
+    }
+
+    /* Animação de fade-in */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Números Aleatórios Mega-Sena</h1>
+    <div id="numeros" class="numeros">Clique no botão para gerar os números.</div>
+    <div id="tempo" class="tempo"></div>
+    <button onclick="gerarAleatorios()">Gerar Números</button>
+  </div>
+
+  <script src="projeto.js"></script>
+</body>
+
+</html>
